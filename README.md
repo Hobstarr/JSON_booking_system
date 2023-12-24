@@ -10,9 +10,9 @@ Clone github repository and then:
 
 if using venv:
 
-  `python -m venv venv`
+\t `python -m venv venv`
 
-  `source bin/activate/venv`
+\t `source bin/activate/venv`
 
 `pip install -r requirements.txt`
 
