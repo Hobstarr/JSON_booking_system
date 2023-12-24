@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+    <h1>
+        This is home.html
+    </h1>
+
+    <form method="post">
+        Name: <input name="name"/>
+        <br/><br/>
+        Age: <input name="age"/>
+        <br/><br/>
+        <button type="submit">Add New Customer</button>
+    </form>
+{% endblock %}

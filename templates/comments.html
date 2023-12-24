@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Comments {% endblock %}
+
+{% block content %}
+    <div class="content">
+        {% for customer in customers %}
+            <div style="padding: 10px; background-color: {{ loop.cycle('green', '#004835') }}">
+                {% for review in customer.comments_dict %}
+                    <p style="padding-left:20px;">{{ customer.name }}: {{ customer.comments_dict[review] }}</p>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+
+

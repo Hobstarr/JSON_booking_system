@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Index {% endblock %}
+
+{% block content %}
+    <div class="sub-container">
+        <img src="{{url_for('static', filename='index-main.jpg')}}">
+    </div>
+
+    <div style="text-align: center; color: #136420">
+
+        <h1>Welcome to the Booking System!</h1>
+        <h3>Today's date is: {{ utc_dt }}</h3>
+    </div>
+{% endblock %}
+
+

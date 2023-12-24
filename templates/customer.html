@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="content" style="width:auto">
+            <div class="'customer">
+                <h1>{% block title %} {{ customer.name }} {% endblock %}</h1>
+                <p><b>#{{ customer.user_id }}</b></p>
+                <b>
+                    <p class="name">{{ customer.name }}</p>
+                </b>
+                <p>{{ customer.age }} years old.</p>
+            </div>
+            <div>
+                <p><b>Reviews:</b></p>
+                {% for review in customer.comments_dict %}
+                    <p style="padding-left:20px;">{{review }}: {{ customer.comments_dict[review] }}</p>
+                {% endfor %}
+            </div>
+ 
+
+    </div>
+{% endblock %}

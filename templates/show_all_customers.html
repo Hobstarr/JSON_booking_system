@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Customers {% endblock %}
+
+{% block content %}
+    <div class="content">
+        {% for customer in customers %}
+            <div class="customer">
+                <p>{{ customer.name }} <br>
+                {{ customer.age }} years old. <br>
+                <b>#{{ customer.user_id }}</b></p>
+
+                <b>Reviews:</b></p>
+                {% for review in customer.comments_dict %}
+                    <p style="padding-left:20px;">{{review }}: {{ customer.comments_dict[review] }}</p>
+                {% endfor %}
+            </div>
+            <div class = 'customer'>
+                <a href="/customers/{{ customer.user_id}}">
+                <input type="button" value="Edit">
+            </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
