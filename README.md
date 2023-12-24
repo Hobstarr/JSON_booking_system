@@ -7,7 +7,9 @@ Simple easy practice backend built in flask to practice JSON file structures.
 This would be easier to build out in SQL and would provide easier and faster way to store relations between entities
 
 Clone github repository and then:
+
 if using venv:
+
   `python -m venv venv`
 
   `source bin/activate/venv`
