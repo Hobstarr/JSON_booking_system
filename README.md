@@ -10,3 +10,7 @@ Clone github repository and then:
 
 `pip install -r requirements.txt`
 
+'python -m flask run'
+
+Flask's default port is 5000, so navigate to localhost:5000 in web browser.
+
